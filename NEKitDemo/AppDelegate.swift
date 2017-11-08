@@ -12,7 +12,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         DDLog.removeAllLoggers()
         DDLog.add(DDTTYLogger.sharedInstance(), with: .info)
-
+        //test 4 sourceTree
         ObserverFactory.currentFactory = DebugObserverFactory()
 
         let config = Configuration()
